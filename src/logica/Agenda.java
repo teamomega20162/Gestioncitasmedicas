@@ -1,6 +1,5 @@
 package logica;
 import java.util.Date;
-/*Hola soy Master*/
 public class Agenda {
 
     public Agenda() {
