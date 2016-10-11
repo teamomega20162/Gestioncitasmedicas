@@ -1,6 +1,6 @@
 package logica;
 /*Todos los dias hay algo que decir
-que asdasdnasndasnd:P*/
+que asdasdnasndasndkhfsdhfjkshfjkh:P*/
 public class Cita {
 
     public Cita() {
