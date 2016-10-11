@@ -1,5 +1,5 @@
 package logica;
-
+/*Todos los dias hay algo que decir*/
 public class Cita {
 
     public Cita() {
