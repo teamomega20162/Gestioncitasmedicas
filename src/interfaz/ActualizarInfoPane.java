@@ -200,8 +200,8 @@ public class ActualizarInfoPane extends javax.swing.JFrame {
             ConfirmarTxt.setEchoChar((char)0);
             PasswordTxt.setEchoChar((char)0);
         }else{
-            ConfirmarTxt.setEchoChar((char)0);
-            PasswordTxt.setEchoChar((char)0);
+            ConfirmarTxt.setEchoChar('*');
+            PasswordTxt.setEchoChar('*');
         }
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
