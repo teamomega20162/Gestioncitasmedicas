@@ -1,9 +1,10 @@
 package interfaz;
-
+import Atxy2k.CustomTextField.RestrictedTextField;
 public class ActualizarInfoPane extends javax.swing.JFrame {
 
     public ActualizarInfoPane() {
         initComponents();
+        RestrictedTextField texto = new RestrictedTextField(ConfirmarTxt,"/*-+");
     }
 
     @SuppressWarnings("unchecked")
