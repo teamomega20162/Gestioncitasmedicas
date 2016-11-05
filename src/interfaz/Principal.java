@@ -7,14 +7,14 @@ package interfaz;
 
 /**
  *
- * @author andre
+ * @author Alex
  */
-public class GenerarCertificado extends javax.swing.JFrame {
+public class Principal extends javax.swing.JFrame {
 
     /**
-     * Creates new form GenerarCertificado
+     * Creates new form Principal
      */
-    public GenerarCertificado() {
+    public Principal() {
         initComponents();
     }
 
@@ -43,10 +43,7 @@ public class GenerarCertificado extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-  
+   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
