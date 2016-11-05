@@ -90,7 +90,7 @@ public class AdministrarCitaPane extends javax.swing.JFrame {
         AccionLb.setText("Acción a realizar");
 
         AccionBox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        AccionBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Buscar Citas", "Asignar Citas", "Aplazar Citas", "Cancelar Citas" }));
+        AccionBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Buscar Citas", "Asignar Citas", "Cancelar Citas" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
