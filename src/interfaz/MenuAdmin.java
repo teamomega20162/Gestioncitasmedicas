@@ -1,8 +1,8 @@
 package interfaz;
 
-public class MenuPane extends javax.swing.JFrame {
+public class MenuAdmin extends javax.swing.JFrame {
 
-    public MenuPane() {
+    public MenuAdmin() {
         initComponents();
     }
 
@@ -91,7 +91,7 @@ public class MenuPane extends javax.swing.JFrame {
 
     private void CerrarSesionBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CerrarSesionBtnActionPerformed
         dispose();
-        LoginPane volver = new LoginPane();
+        InicioSeccionPanel volver = new InicioSeccionPanel();
         volver.setVisible(true);
     }//GEN-LAST:event_CerrarSesionBtnActionPerformed
 
@@ -127,21 +127,23 @@ public class MenuPane extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MenuPane.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MenuPane.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MenuPane.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MenuPane.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MenuPane().setVisible(true);
+                new MenuAdmin().setVisible(true);
             }
         });
     }

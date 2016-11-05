@@ -195,7 +195,7 @@ public class AdministrarCitaPane extends javax.swing.JFrame {
 
     private void VolverBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VolverBtnActionPerformed
         dispose();
-        MenuPane volver = new MenuPane();
+        MenuAdmin volver = new MenuAdmin();
         volver.setVisible(true);
     }//GEN-LAST:event_VolverBtnActionPerformed
 
