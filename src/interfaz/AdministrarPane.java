@@ -39,7 +39,7 @@ public class AdministrarPane extends javax.swing.JFrame {
 
         BuscarBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         BuscarBtn.setText("Proceder");
-        getContentPane().add(BuscarBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(267, 78, -1, -1));
+        getContentPane().add(BuscarBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 80, -1, -1));
 
         VolverBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         VolverBtn.setText("Volver");

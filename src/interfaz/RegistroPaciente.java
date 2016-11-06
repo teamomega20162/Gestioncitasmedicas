@@ -165,7 +165,7 @@ public class RegistroPaciente extends javax.swing.JFrame {
         getContentPane().add(eps_ComboB, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 100, 110, 30));
 
         fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo2.jpg"))); // NOI18N
-        getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 520, 410));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
