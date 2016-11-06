@@ -18,10 +18,10 @@ public class InicioSeccionPanel extends javax.swing.JFrame {
         contraseña_PassF = new javax.swing.JPasswordField();
         salir_Btn = new javax.swing.JButton();
         iconoUser_Lb = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        fondoImagen = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setResizable(false);
 
         ingresar_Btn.setBackground(new java.awt.Color(204, 204, 255));
         ingresar_Btn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -59,7 +59,8 @@ public class InicioSeccionPanel extends javax.swing.JFrame {
 
         iconoUser_Lb.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/People-Patient-Male-icon.png"))); // NOI18N
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo1.jpg"))); // NOI18N
+        fondoImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo1.jpg"))); // NOI18N
+        fondoImagen.setDisabledIcon(null);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -76,15 +77,15 @@ public class InicioSeccionPanel extends javax.swing.JFrame {
                 .addGap(11, 11, 11)
                 .addComponent(contraseña_PassF, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createSequentialGroup()
-                .addGap(80, 80, 80)
-                .addComponent(iconoUser_Lb))
-            .addGroup(layout.createSequentialGroup()
                 .addGap(190, 190, 190)
                 .addComponent(ingresar_Btn))
             .addGroup(layout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addComponent(salir_Btn))
-            .addComponent(jLabel1)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(80, 80, 80)
+                .addComponent(iconoUser_Lb))
+            .addComponent(fondoImagen)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -110,7 +111,7 @@ public class InicioSeccionPanel extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addComponent(salir_Btn))
-            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(fondoImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -172,9 +173,9 @@ public class InicioSeccionPanel extends javax.swing.JFrame {
     private javax.swing.JPasswordField contraseña_PassF;
     private javax.swing.JLabel documento_Lb;
     private javax.swing.JTextField documento_TextF;
+    private javax.swing.JLabel fondoImagen;
     private javax.swing.JLabel iconoUser_Lb;
     private javax.swing.JButton ingresar_Btn;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton salir_Btn;
     // End of variables declaration//GEN-END:variables
 }
