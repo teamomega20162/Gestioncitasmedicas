@@ -22,17 +22,22 @@ public class AdministrarPane extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         TipoBox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         TipoBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Usuario", "Agenda" }));
+        getContentPane().add(TipoBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 39, 121, -1));
 
         TipoLb.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         TipoLb.setText("Tipo");
+        getContentPane().add(TipoLb, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, -1, -1));
 
         BuscarTxt.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        getContentPane().add(BuscarTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 79, 251, -1));
 
         BuscarBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         BuscarBtn.setText("Proceder");
+        getContentPane().add(BuscarBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(267, 78, -1, -1));
 
         VolverBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         VolverBtn.setText("Volver");
@@ -41,64 +46,22 @@ public class AdministrarPane extends javax.swing.JFrame {
                 VolverBtnActionPerformed(evt);
             }
         });
+        getContentPane().add(VolverBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 252, -1, -1));
 
         ResultadoTxt.setColumns(20);
         ResultadoTxt.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         ResultadoTxt.setRows(5);
         jScrollPane1.setViewportView(ResultadoTxt);
 
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 115, 358, -1));
+
         AccionLb.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         AccionLb.setText("Acción a Realizar:");
+        getContentPane().add(AccionLb, new org.netbeans.lib.awtextra.AbsoluteConstraints(147, 11, -1, -1));
 
         AccionBox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         AccionBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Buscar", "Restaurar", "Inhabilitar", "Eliminar" }));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(TipoLb)
-                                .addGap(102, 102, 102)
-                                .addComponent(AccionLb))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(TipoBox, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(AccionBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(BuscarTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(BuscarBtn))))
-                    .addComponent(VolverBtn))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TipoLb)
-                    .addComponent(AccionLb))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TipoBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AccionBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BuscarTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BuscarBtn))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(VolverBtn)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        getContentPane().add(AccionBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 39, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

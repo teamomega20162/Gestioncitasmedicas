@@ -31,17 +31,22 @@ public class AdministrarCitaPane extends javax.swing.JFrame {
         CitaLb = new javax.swing.JLabel();
         AccionLb = new javax.swing.JLabel();
         AccionBox = new javax.swing.JComboBox<>();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         TipoCitaBox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        getContentPane().add(TipoCitaBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 39, 150, -1));
 
         TipoCitaLb.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         TipoCitaLb.setText("Tipo de Cita:");
+        getContentPane().add(TipoCitaLb, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 150, -1));
 
         ProcederBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ProcederBtn.setText("Proceder");
+        getContentPane().add(ProcederBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(356, 162, -1, -1));
 
         VolverBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         VolverBtn.setText("Volver");
@@ -50,146 +55,68 @@ public class AdministrarCitaPane extends javax.swing.JFrame {
                 VolverBtnActionPerformed(evt);
             }
         });
+        getContentPane().add(VolverBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 336, -1, -1));
 
         SalidaTxt.setColumns(20);
         SalidaTxt.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         SalidaTxt.setRows(5);
         jScrollPane1.setViewportView(SalidaTxt);
 
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 199, 549, -1));
+
         CentroMedicoBox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        getContentPane().add(CentroMedicoBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 39, 168, -1));
 
         CentroMedicoLb.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         CentroMedicoLb.setText("Centro Medico:");
+        getContentPane().add(CentroMedicoLb, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 11, -1, -1));
 
         EspecialidadBox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        getContentPane().add(EspecialidadBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(356, 39, 203, -1));
 
         EspecialidadLB.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         EspecialidadLB.setText("Especialidad:");
+        getContentPane().add(EspecialidadLB, new org.netbeans.lib.awtextra.AbsoluteConstraints(356, 11, -1, -1));
 
         HoraLB.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         HoraLB.setText("Hora:");
+        getContentPane().add(HoraLB, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 73, 150, -1));
 
         HoraBox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        getContentPane().add(HoraBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 101, 150, -1));
 
         FechaLb.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         FechaLb.setText("Fecha:");
+        getContentPane().add(FechaLb, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 73, -1, -1));
 
         FechaBox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        getContentPane().add(FechaBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 101, 168, -1));
 
         DoctorBox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        getContentPane().add(DoctorBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(356, 101, 160, -1));
 
         DoctorLb.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         DoctorLb.setText("Nombre de Doctor:");
+        getContentPane().add(DoctorLb, new org.netbeans.lib.awtextra.AbsoluteConstraints(356, 73, 160, -1));
 
         CitaBox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         CitaBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Sistema", "Propia" }));
+        getContentPane().add(CitaBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 165, 150, -1));
 
         CitaLb.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         CitaLb.setText("Cita del:");
+        getContentPane().add(CitaLb, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 137, -1, -1));
 
         AccionLb.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         AccionLb.setText("Acción a realizar");
+        getContentPane().add(AccionLb, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 137, -1, -1));
 
         AccionBox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         AccionBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Buscar Citas", "Asignar Citas", "Cancelar Citas" }));
+        getContentPane().add(AccionBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 165, 168, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(TipoCitaBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(TipoCitaLb, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(CentroMedicoLb)
-                                    .addComponent(CentroMedicoBox, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(HoraBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(HoraLB, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(FechaLb)
-                                    .addComponent(FechaBox, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(CitaBox, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CitaLb))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(AccionLb)
-                                    .addComponent(AccionBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(EspecialidadBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(DoctorLb, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(EspecialidadLB)
-                                    .addComponent(DoctorBox, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(ProcederBtn))
-                                .addGap(0, 43, Short.MAX_VALUE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(VolverBtn)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(TipoCitaLb)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(TipoCitaBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(CentroMedicoLb)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(CentroMedicoBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(EspecialidadLB)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(EspecialidadBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(HoraLB)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(HoraBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(FechaLb)
-                            .addComponent(DoctorLb))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(FechaBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(DoctorBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(8, 8, 8)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(CitaLb)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(CitaBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(ProcederBtn)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(AccionLb)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(AccionBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(VolverBtn)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo1.jpg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 569, 380));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -222,6 +149,7 @@ public class AdministrarCitaPane extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> TipoCitaBox;
     private javax.swing.JLabel TipoCitaLb;
     private javax.swing.JButton VolverBtn;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 

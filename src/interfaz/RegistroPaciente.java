@@ -44,76 +44,99 @@ public class RegistroPaciente extends javax.swing.JFrame {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setUndecorated(true);
         setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         documento_Lb.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         documento_Lb.setForeground(new java.awt.Color(255, 255, 255));
         documento_Lb.setText("Documento:");
+        getContentPane().add(documento_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, -1, -1));
 
         nombres_Lb.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         nombres_Lb.setForeground(new java.awt.Color(255, 255, 255));
         nombres_Lb.setText("Nombres:");
+        getContentPane().add(nombres_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, -1, -1));
 
         apellidos_Lb.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         apellidos_Lb.setForeground(new java.awt.Color(255, 255, 255));
         apellidos_Lb.setText("Apellidos:");
+        getContentPane().add(apellidos_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 230, -1, -1));
 
         tipoDeDocumento_Lb.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         tipoDeDocumento_Lb.setForeground(new java.awt.Color(255, 255, 255));
         tipoDeDocumento_Lb.setText("Tipo de Documento:");
+        getContentPane().add(tipoDeDocumento_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
 
         fechaDeNacimiento_Lb.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         fechaDeNacimiento_Lb.setForeground(new java.awt.Color(255, 255, 255));
         fechaDeNacimiento_Lb.setText("Fecha de nacimiento:");
+        getContentPane().add(fechaDeNacimiento_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, -1, -1));
 
         direccion_Lb.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         direccion_Lb.setForeground(new java.awt.Color(255, 255, 255));
         direccion_Lb.setText("Direccion:");
+        getContentPane().add(direccion_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 310, -1, -1));
 
         telefono_Lb.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         telefono_Lb.setForeground(new java.awt.Color(51, 51, 51));
         telefono_Lb.setText("Telefono fijo:");
+        getContentPane().add(telefono_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, -1, -1));
 
         celular_Lb.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         celular_Lb.setForeground(new java.awt.Color(51, 51, 51));
         celular_Lb.setText("Celular:");
+        getContentPane().add(celular_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 200, -1, 10));
 
         correo_Lb.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         correo_Lb.setForeground(new java.awt.Color(51, 51, 51));
         correo_Lb.setText("Correo electronico:");
+        getContentPane().add(correo_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 230, -1, 20));
 
         clave_Lb.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         clave_Lb.setForeground(new java.awt.Color(51, 51, 51));
         clave_Lb.setText("Clave:");
+        getContentPane().add(clave_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 270, -1, -1));
 
         confirmarClave_Lb.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         confirmarClave_Lb.setForeground(new java.awt.Color(51, 51, 51));
         confirmarClave_Lb.setText("Confirmar clave:");
+        getContentPane().add(confirmarClave_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 310, -1, -1));
 
         documento_TextF.setBackground(new java.awt.Color(204, 204, 255));
+        getContentPane().add(documento_TextF, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, 110, 30));
 
         tipoDocumento_ComboB.setBackground(new java.awt.Color(204, 204, 255));
         tipoDocumento_ComboB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "C.C.", "T.I." }));
+        getContentPane().add(tipoDocumento_ComboB, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 140, 110, 30));
 
         nombres_TextF.setBackground(new java.awt.Color(204, 204, 255));
+        getContentPane().add(nombres_TextF, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, 110, 30));
 
         apellidos_TextF.setBackground(new java.awt.Color(204, 204, 255));
+        getContentPane().add(apellidos_TextF, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 110, 30));
 
         direcccion_TextF.setBackground(new java.awt.Color(204, 204, 255));
+        getContentPane().add(direcccion_TextF, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 300, 110, 30));
 
         telefono_TextF.setBackground(new java.awt.Color(204, 204, 255));
+        getContentPane().add(telefono_TextF, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 150, 110, 30));
 
         celular_TextF.setBackground(new java.awt.Color(204, 204, 255));
+        getContentPane().add(celular_TextF, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 190, 110, 30));
 
         correo_TextF.setBackground(new java.awt.Color(204, 204, 255));
+        getContentPane().add(correo_TextF, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 230, 110, 30));
 
         contraseña_PassF.setBackground(new java.awt.Color(204, 204, 255));
+        getContentPane().add(contraseña_PassF, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 270, 110, 30));
 
         confContraseña_PassF.setBackground(new java.awt.Color(204, 204, 255));
+        getContentPane().add(confContraseña_PassF, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 310, 110, 30));
 
         registrarPaciente_Btn.setBackground(new java.awt.Color(204, 204, 255));
         registrarPaciente_Btn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         registrarPaciente_Btn.setForeground(new java.awt.Color(102, 102, 102));
         registrarPaciente_Btn.setText("Registrar Paciente");
+        getContentPane().add(registrarPaciente_Btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 360, -1, 30));
 
         regresar_Btn.setBackground(new java.awt.Color(204, 204, 255));
         regresar_Btn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -124,158 +147,26 @@ public class RegistroPaciente extends javax.swing.JFrame {
                 regresar_BtnActionPerformed(evt);
             }
         });
+        getContentPane().add(regresar_Btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 363, 90, 30));
 
         titulo_Lb.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         titulo_Lb.setForeground(new java.awt.Color(51, 51, 51));
         titulo_Lb.setText("REGISTRO DE PACIENTES");
+        getContentPane().add(titulo_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
 
         fechaNacimiento_DateC.setBackground(new java.awt.Color(204, 204, 255));
+        getContentPane().add(fechaNacimiento_DateC, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 260, 110, 30));
 
         eps_Lb.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         eps_Lb.setForeground(new java.awt.Color(51, 51, 51));
         eps_Lb.setText("Eps:");
+        getContentPane().add(eps_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, -1, -1));
 
         eps_ComboB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Famisanar", "Capital Salud", "Cafe Salud", "SaludCoop" }));
+        getContentPane().add(eps_ComboB, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 100, 110, 30));
 
         fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo2.jpg"))); // NOI18N
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(titulo_Lb))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(60, 60, 60)
-                .addComponent(documento_Lb)
-                .addGap(15, 15, 15)
-                .addComponent(documento_TextF, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(90, 90, 90)
-                .addComponent(eps_Lb)
-                .addGap(15, 15, 15)
-                .addComponent(eps_ComboB, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(tipoDeDocumento_Lb)
-                .addGap(16, 16, 16)
-                .addComponent(tipoDocumento_ComboB, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(130, 130, 130)
-                .addComponent(telefono_TextF, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(80, 80, 80)
-                .addComponent(nombres_Lb)
-                .addGap(13, 13, 13)
-                .addComponent(nombres_TextF, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(80, 80, 80)
-                .addComponent(celular_Lb)
-                .addGap(5, 5, 5)
-                .addComponent(celular_TextF, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(80, 80, 80)
-                .addComponent(apellidos_Lb)
-                .addGap(11, 11, 11)
-                .addComponent(apellidos_TextF, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(correo_Lb)
-                .addGap(4, 4, 4)
-                .addComponent(correo_TextF, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(fechaDeNacimiento_Lb)
-                .addGap(12, 12, 12)
-                .addComponent(fechaNacimiento_DateC, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(90, 90, 90)
-                .addComponent(clave_Lb)
-                .addGap(4, 4, 4)
-                .addComponent(contraseña_PassF, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(80, 80, 80)
-                .addComponent(direccion_Lb)
-                .addGap(11, 11, 11)
-                .addComponent(direcccion_TextF, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addComponent(confirmarClave_Lb)
-                .addGap(2, 2, 2)
-                .addComponent(confContraseña_PassF, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(regresar_Btn, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(250, 250, 250)
-                .addComponent(registrarPaciente_Btn))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(300, 300, 300)
-                .addComponent(telefono_Lb))
-            .addComponent(fondo, javax.swing.GroupLayout.PREFERRED_SIZE, 510, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(titulo_Lb)
-                .addGap(36, 36, 36)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(documento_TextF, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(eps_ComboB, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(documento_Lb)
-                            .addComponent(eps_Lb))))
-                .addGap(10, 10, 10)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(tipoDocumento_ComboB, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tipoDeDocumento_Lb)
-                            .addComponent(telefono_TextF, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(nombres_Lb))
-                    .addComponent(nombres_TextF, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(celular_Lb, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(celular_TextF, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(apellidos_TextF, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(apellidos_Lb)
-                            .addComponent(correo_Lb, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(correo_TextF, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(fechaNacimiento_DateC, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(fechaDeNacimiento_Lb)
-                            .addComponent(clave_Lb)
-                            .addComponent(contraseña_PassF, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(direcccion_TextF, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(direccion_Lb)
-                            .addComponent(confirmarClave_Lb)
-                            .addComponent(confContraseña_PassF, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(20, 20, 20)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addComponent(regresar_Btn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(registrarPaciente_Btn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(160, 160, 160)
-                .addComponent(telefono_Lb))
-            .addComponent(fondo, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
+        getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

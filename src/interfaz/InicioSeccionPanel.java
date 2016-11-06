@@ -22,6 +22,7 @@ public class InicioSeccionPanel extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         ingresar_Btn.setBackground(new java.awt.Color(204, 204, 255));
         ingresar_Btn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -32,20 +33,25 @@ public class InicioSeccionPanel extends javax.swing.JFrame {
                 ingresar_BtnActionPerformed(evt);
             }
         });
+        getContentPane().add(ingresar_Btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 370, -1, -1));
 
         documento_Lb.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         documento_Lb.setForeground(new java.awt.Color(255, 255, 255));
         documento_Lb.setText("Documento :");
+        getContentPane().add(documento_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, -1));
 
         contraseña_Lb.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         contraseña_Lb.setForeground(new java.awt.Color(255, 255, 255));
         contraseña_Lb.setText("Contraseña :");
+        getContentPane().add(contraseña_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, -1));
 
         documento_TextF.setBackground(new java.awt.Color(204, 204, 255));
         documento_TextF.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        getContentPane().add(documento_TextF, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, 170, 30));
 
         contraseña_PassF.setBackground(new java.awt.Color(204, 204, 255));
         contraseña_PassF.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        getContentPane().add(contraseña_PassF, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 280, 170, 30));
 
         salir_Btn.setBackground(new java.awt.Color(204, 204, 255));
         salir_Btn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -56,63 +62,14 @@ public class InicioSeccionPanel extends javax.swing.JFrame {
                 salir_BtnActionPerformed(evt);
             }
         });
+        getContentPane().add(salir_Btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
         iconoUser_Lb.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/People-Patient-Male-icon.png"))); // NOI18N
+        getContentPane().add(iconoUser_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, -1, -1));
 
         fondoImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo1.jpg"))); // NOI18N
         fondoImagen.setDisabledIcon(null);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(documento_Lb)
-                .addGap(11, 11, 11)
-                .addComponent(documento_TextF, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(contraseña_Lb)
-                .addGap(11, 11, 11)
-                .addComponent(contraseña_PassF, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(190, 190, 190)
-                .addComponent(ingresar_Btn))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(salir_Btn))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(80, 80, 80)
-                .addComponent(iconoUser_Lb))
-            .addComponent(fondoImagen)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(210, 210, 210)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(documento_Lb))
-                    .addComponent(documento_TextF, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(contraseña_Lb))
-                    .addComponent(contraseña_PassF, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(iconoUser_Lb))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(370, 370, 370)
-                .addComponent(ingresar_Btn))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(salir_Btn))
-            .addComponent(fondoImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
+        getContentPane().add(fondoImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 400));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

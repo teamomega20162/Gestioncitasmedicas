@@ -18,6 +18,7 @@ public class MenuAdmin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         AdminCitasBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         AdminCitasBtn.setText("Administrar Citas");
@@ -26,9 +27,11 @@ public class MenuAdmin extends javax.swing.JFrame {
                 AdminCitasBtnActionPerformed(evt);
             }
         });
+        getContentPane().add(AdminCitasBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 183, -1));
 
         GenerarBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         GenerarBtn.setText("Generar Certificado");
+        getContentPane().add(GenerarBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 127, -1, -1));
 
         CerrarSesionBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         CerrarSesionBtn.setText("Cerrar Sesión");
@@ -37,6 +40,7 @@ public class MenuAdmin extends javax.swing.JFrame {
                 CerrarSesionBtnActionPerformed(evt);
             }
         });
+        getContentPane().add(CerrarSesionBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 164, 183, -1));
 
         AdminDatosBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         AdminDatosBtn.setText("Administrar Datos");
@@ -45,6 +49,7 @@ public class MenuAdmin extends javax.swing.JFrame {
                 AdminDatosBtnActionPerformed(evt);
             }
         });
+        getContentPane().add(AdminDatosBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 48, 183, -1));
 
         ActualizarBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ActualizarBtn.setText("Actualizar Datos");
@@ -53,39 +58,7 @@ public class MenuAdmin extends javax.swing.JFrame {
                 ActualizarBtnActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(CerrarSesionBtn)
-                    .addComponent(AdminCitasBtn)
-                    .addComponent(GenerarBtn)
-                    .addComponent(ActualizarBtn)
-                    .addComponent(AdminDatosBtn))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {ActualizarBtn, AdminCitasBtn, AdminDatosBtn, CerrarSesionBtn, GenerarBtn});
-
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(AdminCitasBtn)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(AdminDatosBtn)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ActualizarBtn)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(GenerarBtn)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(CerrarSesionBtn)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        getContentPane().add(ActualizarBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 85, 183, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
