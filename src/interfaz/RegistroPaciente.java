@@ -1,8 +1,9 @@
 package interfaz;
 
 import Atxy2k.CustomTextField.RestrictedTextField;
-import java.util.Arrays;
-import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import javax.swing.JOptionPane;
 
 public class RegistroPaciente extends javax.swing.JFrame {
 
@@ -59,7 +60,7 @@ public class RegistroPaciente extends javax.swing.JFrame {
         registrarPaciente_Btn = new javax.swing.JButton();
         regresar_Btn = new javax.swing.JButton();
         titulo_Lb = new javax.swing.JLabel();
-        fechaNacimiento_DateC = new com.toedter.calendar.JDateChooser();
+        fechaNacimientoDate = new com.toedter.calendar.JDateChooser();
         eps_Lb = new javax.swing.JLabel();
         eps_ComboB = new javax.swing.JComboBox<>();
         mostrarPassBtn = new javax.swing.JToggleButton();
@@ -183,8 +184,8 @@ public class RegistroPaciente extends javax.swing.JFrame {
         titulo_Lb.setText("REGISTRO DE PACIENTES");
         getContentPane().add(titulo_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
 
-        fechaNacimiento_DateC.setBackground(new java.awt.Color(204, 204, 255));
-        getContentPane().add(fechaNacimiento_DateC, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 260, 110, 30));
+        fechaNacimientoDate.setBackground(new java.awt.Color(204, 204, 255));
+        getContentPane().add(fechaNacimientoDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 260, 110, 30));
 
         eps_Lb.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         eps_Lb.setForeground(new java.awt.Color(51, 51, 51));
@@ -227,6 +228,23 @@ public class RegistroPaciente extends javax.swing.JFrame {
         correo = correoTxt.getText();
         clave = Arrays.toString(claveTxt.getPassword());
         confirmar = Arrays.toString(confirmarTxt.getPassword());
+        fechaNacimiento = fechaNacimientoDate.getDate();
+        if (!nombre.equals("") && !apellido.equals("") && !direccion.equals("") && !telefono.equals("") && !documento.equals("") && !apellido.equals("") && !celular.equals("") && !correo.equals("") && !fechaNacimiento.equals("")) {
+            if (!"".equals(confirmar) && !"".equals(confirmar)) {
+                if (confirmar.equals(clave)) {
+                    JOptionPane.showMessageDialog(null, "Son iguales :P");
+                } else {
+                    JOptionPane.showMessageDialog(null, "Son diferentes :(");
+
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Digita clave :/");
+
+            }
+
+        }
+
+//        JOptionPane.showMessageDialog(null, "tu fecha es:" + new SimpleDateFormat("dd/MM/yyyy").format(fechaNacimiento));
     }//GEN-LAST:event_registrarPaciente_BtnActionPerformed
 
     private void mostrarPassBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mostrarPassBtnActionPerformed
@@ -258,7 +276,7 @@ public class RegistroPaciente extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> eps_ComboB;
     private javax.swing.JLabel eps_Lb;
     private javax.swing.JLabel fechaDeNacimiento_Lb;
-    private com.toedter.calendar.JDateChooser fechaNacimiento_DateC;
+    private com.toedter.calendar.JDateChooser fechaNacimientoDate;
     private javax.swing.JLabel fondo;
     private javax.swing.JToggleButton mostrarPassBtn;
     private javax.swing.JTextField nombreTxt;

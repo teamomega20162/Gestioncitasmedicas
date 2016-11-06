@@ -394,7 +394,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="com.toedter.calendar.JDateChooser" name="fechaNacimiento_DateC">
+    <Component class="com.toedter.calendar.JDateChooser" name="fechaNacimientoDate">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="cc" red="cc" type="rgb"/>
