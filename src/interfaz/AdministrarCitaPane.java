@@ -5,6 +5,7 @@ public class AdministrarCitaPane extends javax.swing.JFrame {
     /** Creates new form AdministarPane */
     public AdministrarCitaPane() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     @SuppressWarnings("unchecked")

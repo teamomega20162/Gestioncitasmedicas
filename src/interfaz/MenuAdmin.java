@@ -4,6 +4,7 @@ public class MenuAdmin extends javax.swing.JFrame {
 
     public MenuAdmin() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     @SuppressWarnings("unchecked")

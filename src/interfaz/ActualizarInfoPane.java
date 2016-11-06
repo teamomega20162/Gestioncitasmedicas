@@ -4,6 +4,7 @@ public class ActualizarInfoPane extends javax.swing.JFrame {
 
     public ActualizarInfoPane() {
         initComponents();
+        this.setLocationRelativeTo(null);
         RestrictedTextField texto = new RestrictedTextField(ConfirmarTxt,"/*-+");
     }
 

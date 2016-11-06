@@ -4,6 +4,7 @@ public class AdministrarPane extends javax.swing.JFrame {
 
     public AdministrarPane() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     @SuppressWarnings("unchecked")

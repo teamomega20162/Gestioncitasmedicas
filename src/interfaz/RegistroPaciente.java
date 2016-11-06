@@ -171,7 +171,7 @@ public class RegistroPaciente extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void regresar_BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regresar_BtnActionPerformed
-        MenuAdmin adminPanel = new MenuAdmin();
+        InicioSeccionPanel adminPanel = new InicioSeccionPanel();
         adminPanel.setVisible(true);
         dispose();
     }//GEN-LAST:event_regresar_BtnActionPerformed

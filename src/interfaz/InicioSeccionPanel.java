@@ -11,6 +11,7 @@ public class InicioSeccionPanel extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        RegistrarseBtn = new javax.swing.JButton();
         ingresar_Btn = new javax.swing.JButton();
         documento_Lb = new javax.swing.JLabel();
         contraseña_Lb = new javax.swing.JLabel();
@@ -24,6 +25,17 @@ public class InicioSeccionPanel extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        RegistrarseBtn.setBackground(new java.awt.Color(204, 204, 255));
+        RegistrarseBtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        RegistrarseBtn.setForeground(new java.awt.Color(102, 102, 102));
+        RegistrarseBtn.setText("Registrarse");
+        RegistrarseBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RegistrarseBtnActionPerformed(evt);
+            }
+        });
+        getContentPane().add(RegistrarseBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, -1, -1));
+
         ingresar_Btn.setBackground(new java.awt.Color(204, 204, 255));
         ingresar_Btn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         ingresar_Btn.setForeground(new java.awt.Color(102, 102, 102));
@@ -33,25 +45,25 @@ public class InicioSeccionPanel extends javax.swing.JFrame {
                 ingresar_BtnActionPerformed(evt);
             }
         });
-        getContentPane().add(ingresar_Btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 370, -1, -1));
+        getContentPane().add(ingresar_Btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, -1, -1));
 
         documento_Lb.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         documento_Lb.setForeground(new java.awt.Color(255, 255, 255));
         documento_Lb.setText("Documento :");
-        getContentPane().add(documento_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, -1));
+        getContentPane().add(documento_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, -1));
 
         contraseña_Lb.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         contraseña_Lb.setForeground(new java.awt.Color(255, 255, 255));
         contraseña_Lb.setText("Contraseña :");
-        getContentPane().add(contraseña_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, -1));
+        getContentPane().add(contraseña_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, -1, -1));
 
         documento_TextF.setBackground(new java.awt.Color(204, 204, 255));
         documento_TextF.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        getContentPane().add(documento_TextF, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, 170, 30));
+        getContentPane().add(documento_TextF, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, 170, 30));
 
         contraseña_PassF.setBackground(new java.awt.Color(204, 204, 255));
         contraseña_PassF.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        getContentPane().add(contraseña_PassF, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 280, 170, 30));
+        getContentPane().add(contraseña_PassF, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 250, 170, 30));
 
         salir_Btn.setBackground(new java.awt.Color(204, 204, 255));
         salir_Btn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -69,7 +81,7 @@ public class InicioSeccionPanel extends javax.swing.JFrame {
 
         fondoImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo1.jpg"))); // NOI18N
         fondoImagen.setDisabledIcon(null);
-        getContentPane().add(fondoImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 400));
+        getContentPane().add(fondoImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 300, 340));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -86,14 +98,20 @@ public class InicioSeccionPanel extends javax.swing.JFrame {
 //            contraseña_PassF.setText("");
 //            JOptionPane.showMessageDialog(rootPane, "El usuario no se encuentra registrado o ingreso mal los campos intente nuevamente");
 //        }+
-    RegistroPaciente panelRegistro = new RegistroPaciente();
-    panelRegistro.setVisible(true);
-    dispose();
+        MenuAdmin adminPanel = new MenuAdmin();
+        adminPanel.setVisible(true);
+        dispose();
     }//GEN-LAST:event_ingresar_BtnActionPerformed
 
     private void salir_BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir_BtnActionPerformed
         System.exit(0);
     }//GEN-LAST:event_salir_BtnActionPerformed
+
+    private void RegistrarseBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistrarseBtnActionPerformed
+        RegistroPaciente panelRegistro = new RegistroPaciente();
+        panelRegistro.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_RegistrarseBtnActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -126,6 +144,7 @@ public class InicioSeccionPanel extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton RegistrarseBtn;
     private javax.swing.JLabel contraseña_Lb;
     private javax.swing.JPasswordField contraseña_PassF;
     private javax.swing.JLabel documento_Lb;
