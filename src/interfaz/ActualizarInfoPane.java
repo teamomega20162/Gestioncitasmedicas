@@ -30,6 +30,7 @@ public class ActualizarInfoPane extends javax.swing.JFrame {
         AnteriorLb = new javax.swing.JLabel();
         AnteriorTxt = new javax.swing.JPasswordField();
         jToggleButton1 = new javax.swing.JToggleButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -114,6 +115,9 @@ public class ActualizarInfoPane extends javax.swing.JFrame {
         });
         getContentPane().add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(515, 152, -1, -1));
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo1.jpg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-6, -6, 720, 200));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -154,6 +158,7 @@ public class ActualizarInfoPane extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> TipoBox;
     private javax.swing.JLabel TipoLb;
     private javax.swing.JButton VolverBtn;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JToggleButton jToggleButton1;
     // End of variables declaration//GEN-END:variables
 }

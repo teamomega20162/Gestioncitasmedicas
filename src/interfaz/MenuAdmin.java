@@ -15,9 +15,10 @@ public class MenuAdmin extends javax.swing.JFrame {
         CerrarSesionBtn = new javax.swing.JButton();
         AdminDatosBtn = new javax.swing.JButton();
         ActualizarBtn = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         AdminCitasBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -60,6 +61,9 @@ public class MenuAdmin extends javax.swing.JFrame {
         });
         getContentPane().add(ActualizarBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 85, 183, -1));
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo1.jpg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-6, -6, 210, 230));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -93,5 +97,6 @@ public class MenuAdmin extends javax.swing.JFrame {
     private javax.swing.JButton AdminDatosBtn;
     private javax.swing.JButton CerrarSesionBtn;
     private javax.swing.JButton GenerarBtn;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

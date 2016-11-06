@@ -19,9 +19,10 @@ public class AdministrarPane extends javax.swing.JFrame {
         ResultadoTxt = new javax.swing.JTextArea();
         AccionLb = new javax.swing.JLabel();
         AccionBox = new javax.swing.JComboBox<>();
+        jLabel1 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         TipoBox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -63,6 +64,9 @@ public class AdministrarPane extends javax.swing.JFrame {
         AccionBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Buscar", "Restaurar", "Inhabilitar", "Eliminar" }));
         getContentPane().add(AccionBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 39, -1, -1));
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo1.jpg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-6, -6, 390, 300));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -82,6 +86,7 @@ public class AdministrarPane extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> TipoBox;
     private javax.swing.JLabel TipoLb;
     private javax.swing.JButton VolverBtn;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 

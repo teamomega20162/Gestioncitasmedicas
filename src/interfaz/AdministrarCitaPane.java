@@ -33,8 +33,8 @@ public class AdministrarCitaPane extends javax.swing.JFrame {
         AccionBox = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         TipoCitaBox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -93,7 +93,7 @@ public class AdministrarCitaPane extends javax.swing.JFrame {
         getContentPane().add(FechaBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 101, 168, -1));
 
         DoctorBox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        getContentPane().add(DoctorBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(356, 101, 160, -1));
+        getContentPane().add(DoctorBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 100, 200, -1));
 
         DoctorLb.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         DoctorLb.setText("Nombre de Doctor:");
