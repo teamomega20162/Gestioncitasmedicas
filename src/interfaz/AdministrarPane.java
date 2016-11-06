@@ -21,6 +21,7 @@ public class AdministrarPane extends javax.swing.JFrame {
         AccionBox = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         TipoBox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         TipoBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Usuario", "Agenda" }));

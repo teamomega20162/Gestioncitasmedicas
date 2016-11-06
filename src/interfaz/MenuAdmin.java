@@ -17,6 +17,7 @@ public class MenuAdmin extends javax.swing.JFrame {
         ActualizarBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         AdminCitasBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         AdminCitasBtn.setText("Administrar Citas");

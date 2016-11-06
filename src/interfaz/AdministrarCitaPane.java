@@ -33,6 +33,7 @@ public class AdministrarCitaPane extends javax.swing.JFrame {
         AccionBox = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         TipoCitaBox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 

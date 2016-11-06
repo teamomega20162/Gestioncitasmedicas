@@ -32,6 +32,7 @@ public class ActualizarInfoPane extends javax.swing.JFrame {
         jToggleButton1 = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         DocumentoLb.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         DocumentoLb.setText("Documento");
