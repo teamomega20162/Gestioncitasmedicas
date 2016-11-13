@@ -28,6 +28,7 @@ public class InicioSeccionPanel extends javax.swing.JFrame {
         fondoImagen = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setUndecorated(true);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -69,7 +70,7 @@ public class InicioSeccionPanel extends javax.swing.JFrame {
 
         claveTxt.setBackground(new java.awt.Color(204, 204, 255));
         claveTxt.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        getContentPane().add(claveTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 250, 170, 30));
+        getContentPane().add(claveTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 250, 130, 30));
 
         salir_Btn.setBackground(new java.awt.Color(204, 204, 255));
         salir_Btn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -86,17 +87,19 @@ public class InicioSeccionPanel extends javax.swing.JFrame {
         getContentPane().add(iconoUser_Lb, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, -1, -1));
 
         mostrarPassBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        mostrarPassBtn.setText("Mostrar Contraseña");
+        mostrarPassBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/eye-shape-variant-interface-view-symbol_318-60501.png"))); // NOI18N
+        mostrarPassBtn.setMaximumSize(new java.awt.Dimension(33, 33));
+        mostrarPassBtn.setMinimumSize(new java.awt.Dimension(33, 33));
         mostrarPassBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mostrarPassBtnActionPerformed(evt);
             }
         });
-        getContentPane().add(mostrarPassBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, 190, -1));
+        getContentPane().add(mostrarPassBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 250, 33, 33));
 
         fondoImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo1.jpg"))); // NOI18N
         fondoImagen.setDisabledIcon(null);
-        getContentPane().add(fondoImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 300, 370));
+        getContentPane().add(fondoImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 290, 370));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
