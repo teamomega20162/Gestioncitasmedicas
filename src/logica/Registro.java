@@ -1,7 +1,6 @@
 package logica;
 
 import java.sql.*;
-import javax.swing.JOptionPane;
 
 public class Registro {
 
@@ -31,5 +30,11 @@ public class Registro {
         } catch (Exception e) {
         }
         return ingreso;
+    }
+
+    public boolean registrarPaciente(String documento, String tipoDocumento, String nombres, String apellidos, Date fechaNacimiento, String direccion,String eps, String telefonoFijo,String celular,String correoElectronico,String clave) {
+        boolean registro = false;
+        String sql = "insert into usuarios values ( "+documento+","+tipoDocumento+","+nombres+","+apellidos+","+fechaNacimiento+","+direccion+","+eps+","+telefonoFijo+","+celular+","+correoElectronico+","+clave;
+        return registro;
     }
 }

@@ -1,6 +1,7 @@
 create table usuarios(
 	
 	documento int not null primary key,
+        tipoDocumento varchar(5) not null,
 	nombres varchar(40) not null,
 	apellidos varchar(40) not null,
 	genero varchar(5) not null,
@@ -29,6 +30,6 @@ create table cita(
         FechaCia date not null,
         HoraInicio time not null,
         HoraFin time not null,
-        NombreDoctor varchar(20)
-        foreign key (IdAgenda) references agenda(idAgenda)on delete cascade on update cascade););
+        NombreDoctor varchar(20) not null,
+        foreign key (IdAgenda) references agenda(idAgenda)on delete cascade on update cascade);
         
