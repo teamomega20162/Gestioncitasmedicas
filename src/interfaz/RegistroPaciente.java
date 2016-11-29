@@ -232,7 +232,7 @@ public class RegistroPaciente extends javax.swing.JFrame {
         confirmar = Arrays.toString(confirmarTxt.getPassword());
         fechaNacimiento = fechaNacimientoDate.getDate();
         if (!nombre.equals("") && !apellido.equals("") && !direccion.equals("") && !telefono.equals("") && !documento.equals("") && !apellido.equals("") && !celular.equals("") && !correo.equals("") && !fechaNacimiento.equals("")) {
-            if (!"".equals(confirmar) && !"".equals(confirmar)) {
+            if (!"".equals(confirmar) && !"".equals(clave)) {
                 if (confirmar.equals(clave)) {
                     JOptionPane.showMessageDialog(null, "Son iguales :P");
                 } else {
@@ -244,6 +244,8 @@ public class RegistroPaciente extends javax.swing.JFrame {
 
             }
 
+        } else {
+            JOptionPane.showMessageDialog(null, "Digita todos los datos >:(");
         }
 
 //        JOptionPane.showMessageDialog(null, "tu fecha es:" + new SimpleDateFormat("dd/MM/yyyy").format(fechaNacimiento));
