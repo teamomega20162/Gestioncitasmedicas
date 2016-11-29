@@ -1,9 +1,10 @@
 package interfaz;
 
 import Atxy2k.CustomTextField.RestrictedTextField;
-import java.text.SimpleDateFormat;
+import java.sql.Date;
 import java.util.*;
 import javax.swing.JOptionPane;
+import logica.Registro;
 
 public class RegistroPaciente extends javax.swing.JFrame {
 
@@ -230,11 +231,13 @@ public class RegistroPaciente extends javax.swing.JFrame {
         correo = correoTxt.getText();
         clave = Arrays.toString(claveTxt.getPassword());
         confirmar = Arrays.toString(confirmarTxt.getPassword());
-        fechaNacimiento = fechaNacimientoDate.getDate();
+        fechaNacimiento = (Date) fechaNacimientoDate.getDate();
         if (!nombre.equals("") && !apellido.equals("") && !direccion.equals("") && !telefono.equals("") && !documento.equals("") && !apellido.equals("") && !celular.equals("") && !correo.equals("") && !fechaNacimiento.equals("")) {
             if (!confirmar.equals("") && !clave.equals("")) {
                 if (confirmar.equals(clave)) {
                     //Acciones para registrar en el DB
+                    Registro registrar= new Registro();
+                    registrar.registrarPaciente(documento, tipoDocumento, nombre, apellido, (java.sql.Date) fechaNacimiento, direccion, eps, telefono, celular, telefono, clave);
                     JOptionPane.showMessageDialog(null, "Son iguales :P");
                 } else {
                     JOptionPane.showMessageDialog(null, "Clave incorrecta, digite bien su clave");

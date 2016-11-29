@@ -1,5 +1,4 @@
 create table usuarios(
-	
 	documento int not null primary key,
         tipoDocumento varchar(5) not null,
 	nombres varchar(40) not null,
@@ -15,14 +14,12 @@ create table usuarios(
 	tipoUsuario varchar(15) not null);
 
 create table agenda(
-        
         IdAgenda int not null auto_increment primary key,
         NombreAgenda varchar(30) not null,
         FechaInicio date not null,
         FechaFin date not null);
 
 create table cita(
-        
         IdCita int not null auto_increment primary key,
         documento int not null,
         IdAgenda int not null,
