@@ -10,7 +10,9 @@ public class InicioSeccionPanel extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
     }
-    private static String documento;
+    public static String documento;
+    //Se necesita saber el tipo de usuario 
+    public static String TipoUsuario="Usuario";
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents

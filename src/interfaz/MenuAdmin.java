@@ -4,6 +4,9 @@ public class MenuAdmin extends javax.swing.JFrame {
 
     public MenuAdmin() {
         initComponents();
+        if (!InicioSeccionPanel.TipoUsuario.equals("Admin")) {
+            AdminDatosBtn.setVisible(false);
+        }
         this.setLocationRelativeTo(null);
     }
 
