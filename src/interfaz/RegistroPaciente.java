@@ -15,8 +15,10 @@ public class RegistroPaciente extends javax.swing.JFrame {
         RestrictedTextField numero3 = new RestrictedTextField(documentoTxt, "0123456789");
         RestrictedTextField texto1 = new RestrictedTextField(nombreTxt);
         texto1.setOnlyText(true);
+        texto1.setAcceptSpace(true);
         RestrictedTextField texto2 = new RestrictedTextField(apellidoTxt);
         texto2.setOnlyText(true);
+        texto2.setAcceptSpace(true);
     }
 
     private String nombre;

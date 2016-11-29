@@ -10,6 +10,8 @@ public class ActualizarInfoPane extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         RestrictedTextField numero = new RestrictedTextField(TelefonoTxt, "0123456789");
         RestrictedTextField numero2 = new RestrictedTextField(CelularTxt, "0123456789");
+        RestrictedTextField numero3 = new RestrictedTextField(DocumentoTxt, "0123456789");
+
     }
     private String documento;
     private String tipoDocumento;
