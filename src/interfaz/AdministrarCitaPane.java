@@ -2,7 +2,9 @@ package interfaz;
 
 public class AdministrarCitaPane extends javax.swing.JFrame {
 
-    /** Creates new form AdministarPane */
+    /**
+     * Creates new form AdministarPane
+     */
     public AdministrarCitaPane() {
         initComponents();
         this.setLocationRelativeTo(null);
@@ -47,6 +49,11 @@ public class AdministrarCitaPane extends javax.swing.JFrame {
 
         ProcederBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         ProcederBtn.setText("Proceder");
+        ProcederBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ProcederBtnActionPerformed(evt);
+            }
+        });
         getContentPane().add(ProcederBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(356, 162, -1, -1));
 
         VolverBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -128,7 +135,23 @@ public class AdministrarCitaPane extends javax.swing.JFrame {
         volver.setVisible(true);
     }//GEN-LAST:event_VolverBtnActionPerformed
 
-   
+    private void ProcederBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProcederBtnActionPerformed
+        switch (AccionBox.getSelectedIndex()) {
+            case 0:
+                //Acciones para buscar citas
+                SalidaTxt.setText(AccionBox.getSelectedItem().toString());
+                break;
+            case 1:
+                //Acciones para asignar citas
+                SalidaTxt.setText(AccionBox.getSelectedItem().toString());
+                break;
+            case 2:
+                //Acciones para cancelar citas
+                SalidaTxt.setText(AccionBox.getSelectedItem().toString());
+                break;
+        }
+    }//GEN-LAST:event_ProcederBtnActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> AccionBox;
