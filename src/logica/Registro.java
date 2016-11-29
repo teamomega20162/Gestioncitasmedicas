@@ -7,6 +7,7 @@ public class Registro {
     Connection conn = null;
     ResultSet rs = null;
     PreparedStatement pst = null;
+    Statement st=null;
 
     public Registro() {
 
@@ -32,9 +33,12 @@ public class Registro {
         return ingreso;
     }
 
-    public boolean registrarPaciente(String documento, String tipoDocumento, String nombres, String apellidos, Date fechaNacimiento, String direccion,String eps, String telefonoFijo,String celular,String correoElectronico,String clave) {
+    public boolean registrarPaciente(String documento, String tipoDocumento, String nombres, String apellidos, Date fechaNacimiento, String direccion,String eps, String telefonoFijo,String celular,String correoElectronico,String clave) throws SQLException {
         boolean registro = false;
-        String sql = "insert into usuarios values ( "+documento+","+tipoDocumento+","+nombres+","+apellidos+","+fechaNacimiento+","+direccion+","+eps+","+telefonoFijo+","+celular+","+correoElectronico+","+clave;
+        String sql = "insert into usuarios values ( "+documento+","+tipoDocumento+","+nombres+","+apellidos+","+fechaNacimiento+","+direccion+","+eps+","+telefonoFijo+","+celular+","+correoElectronico+","+clave+")";
+        System.out.println(sql);
+        pst = conn.prepareStatement(sql);
+        rs=pst.executeQuery();
         return registro;
     }
 }

@@ -1,8 +1,10 @@
 package interfaz;
 
 import Atxy2k.CustomTextField.RestrictedTextField;
-import java.sql.Date;
+import java.sql.SQLException;
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import logica.Registro;
 
@@ -229,15 +231,20 @@ public class RegistroPaciente extends javax.swing.JFrame {
         telefono = telefonoTxt.getText();
         celular = celularTxt.getText();
         correo = correoTxt.getText();
-        clave = Arrays.toString(claveTxt.getPassword());
-        confirmar = Arrays.toString(confirmarTxt.getPassword());
-        fechaNacimiento = (Date) fechaNacimientoDate.getDate();
+        clave = new String(claveTxt.getPassword());
+        confirmar = new String(confirmarTxt.getPassword());
+        fechaNacimiento = fechaNacimientoDate.getDate();
         if (!nombre.equals("") && !apellido.equals("") && !direccion.equals("") && !telefono.equals("") && !documento.equals("") && !apellido.equals("") && !celular.equals("") && !correo.equals("") && !fechaNacimiento.equals("")) {
             if (!confirmar.equals("") && !clave.equals("")) {
                 if (confirmar.equals(clave)) {
-                    //Acciones para registrar en el DB
-                    Registro registrar= new Registro();
-                    registrar.registrarPaciente(documento, tipoDocumento, nombre, apellido, (java.sql.Date) fechaNacimiento, direccion, eps, telefono, celular, telefono, clave);
+                    //Acciones para registrar en el DB,conversion a SQL Date
+                    java.sql.Date fechaNacimientoSQL = new java.sql.Date(fechaNacimiento.getTime());
+                    Registro registrar = new Registro();
+                    try {
+                        registrar.registrarPaciente(documento, tipoDocumento, nombre, apellido, fechaNacimientoSQL, direccion, eps, telefono, celular, telefono, clave);
+                    } catch (SQLException ex) {
+                        Logger.getLogger(RegistroPaciente.class.getName()).log(Level.SEVERE, null, ex);
+                    }
                     JOptionPane.showMessageDialog(null, "Son iguales :P");
                 } else {
                     JOptionPane.showMessageDialog(null, "Clave incorrecta, digite bien su clave");
