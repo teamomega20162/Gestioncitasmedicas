@@ -39,6 +39,11 @@ public class AdministrarPane extends javax.swing.JFrame {
 
         BuscarBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         BuscarBtn.setText("Proceder");
+        BuscarBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BuscarBtnActionPerformed(evt);
+            }
+        });
         getContentPane().add(BuscarBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 80, -1, -1));
 
         VolverBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -77,7 +82,28 @@ public class AdministrarPane extends javax.swing.JFrame {
         volver.setVisible(true);
     }//GEN-LAST:event_VolverBtnActionPerformed
 
-  
+    private void BuscarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarBtnActionPerformed
+        switch (AccionBox.getSelectedIndex()) {
+            case 0:
+                //acciones de buscar en el DB
+                ResultadoTxt.setText(AccionBox.getSelectedItem().toString());
+                break;
+            case 1:
+                //acciones de restaurar en el DB
+                ResultadoTxt.setText(AccionBox.getSelectedItem().toString());
+                break;
+            case 2:
+                //acciones de inhabilitar en el DB
+                ResultadoTxt.setText(AccionBox.getSelectedItem().toString());
+                break;
+            case 3:
+                //acciones de eliminar en el DB
+                ResultadoTxt.setText(AccionBox.getSelectedItem().toString());
+                break;
+        }
+    }//GEN-LAST:event_BuscarBtnActionPerformed
+
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> AccionBox;
     private javax.swing.JLabel AccionLb;
