@@ -232,18 +232,18 @@ public class RegistroPaciente extends javax.swing.JFrame {
         confirmar = Arrays.toString(confirmarTxt.getPassword());
         fechaNacimiento = fechaNacimientoDate.getDate();
         if (!nombre.equals("") && !apellido.equals("") && !direccion.equals("") && !telefono.equals("") && !documento.equals("") && !apellido.equals("") && !celular.equals("") && !correo.equals("") && !fechaNacimiento.equals("")) {
-            if (!"".equals(confirmar) && !"".equals(clave)) {
+            if (!confirmar.equals("") && !clave.equals("")) {
                 if (confirmar.equals(clave)) {
+                    //Acciones para registrar en el DB
                     JOptionPane.showMessageDialog(null, "Son iguales :P");
                 } else {
-                    JOptionPane.showMessageDialog(null, "Son diferentes :(");
+                    JOptionPane.showMessageDialog(null, "Clave incorrecta, digite bien su clave");
 
                 }
             } else {
                 JOptionPane.showMessageDialog(null, "Digita clave :/");
 
             }
-
         } else {
             JOptionPane.showMessageDialog(null, "Digita todos los datos >:(");
         }
